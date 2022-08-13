@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= title%></title>
+    <script src="https://kit.fontawesome.com/86dd55b3e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/CSS/home.css">
+</head>
+<body>
+    <div class="header">
+        
+        <h1 id="text_align"><i class="fa-solid fa-address-book fa-lg"></i>TODO Lists</h1>
+    </div>
+    
+    <div class="form">
+        <form action="create_todo" method="post">
+            <div class="description">
+                <h3>Description</h3>
+                <input type="text" name="description"placeholder="What do you need to do?" required></input>
+            </div>
+            <div class="rest">
+                <div class="Category">
+                    <h3>Category</h3>
+                    <select name="category" required>
+
+                        <option>PERSONAL</option>
+                        <option>WORK</option>
+                        <option>SCHOOL</option>
+                        <option>CLEANING</option>
+                        <option>OTHER</option>
+
+                    </select>
+                 </div>
+                 <div class="date">
+                    <h3>Date</h3>
+                    <input type="date" name="date" required>
+                 </div>
+            </div>
+            <div class="submit">
+                <input type="submit"  class="btn"id="add" value="ADD TASK">
+            </div>
+        </form>
+    </div>
+
+
+    <div class="print">
+        <h2>Recent ToDo</h2>
+
+            <form action="/delete-todo" method="get">
+                <table class="table">
+                    <thead class="thead">
+                        <tr>
+                          <th>Select</th>
+                          <th>Task</th>
+                          <th>Category</th>
+                        <th>due date</th>
+                        </tr>
+                     </thead>
+                 <tbody class="tbody">
+                    <% for(let i of task) { %>
+                      <tr>
+                           <td> <input type="checkbox" name="<%= i.id %>" ></td>
+                           <td> <p id="task-description"><%= i.description %></p></td>
+                            <td><p id="task-category"><%= i.category %></p></td>
+                            <td><p id="due-date"><%= i.date %></p></td>
+                      </tr>
+                
+                    <% } %>
+                </tbody>
+                       
+</table>
+<div>
+    <input type="submit" class="btn" value="DELETE TASK">
+            </div>>
+        </form>
+
+    
+        </div>
+</body>
+</html>

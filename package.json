@@ -1,0 +1,16 @@
+{
+  "name": "todolists",
+  "version": "1.0.0",
+  "description": "TODOlists",
+  "main": "index.js",
+  "scripts": {
+    "nodemon": "nodemon index.js"
+  },
+  "author": "CodingNinjas",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  }
+}

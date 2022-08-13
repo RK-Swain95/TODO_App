@@ -1,0 +1,105 @@
+*{
+    text-align: center;
+}
+body{
+    width: 50%;
+    margin: auto;
+
+  
+}
+h3{
+    margin: 0px;
+}
+.description{
+    border: 2px solid rgb(91, 89, 89);
+    margin: auto;
+    height: 10%;
+    background-color: beige;
+}
+.description h3{
+    color: rgb(50, 48, 47);
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0.8;
+   position: relative;
+   top:-3px;
+   left:-313px;
+   margin: 0 auto;
+}
+.description input{
+    border: none;
+    font-size: 1rem;
+    margin-left: -8%;
+    background-color: inherit;
+    width: 90%;
+    outline: none;
+    text-align: left;
+}
+.description input::placeholder{
+    font-style: italic;
+    color: rgb(54, 57, 55);
+    margin-left: 73%;
+    opacity: 0.7;
+}
+.rest{
+    display: flex;
+    border: 2px solid rgb(91, 89, 89);
+    background-color: beige;
+    border-top: 0ch;
+}
+.Category{
+    border-right: 1px solid rgb(91, 89, 89);
+    width: 50%; 
+}
+.date{
+    width: 50%;
+    /* border: 2px solid black; */
+}
+.Category h3,.date h3{
+    color: rgb(50, 48, 47);
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0.8;
+   position: relative;
+   top:-3px;
+   left:-137px;
+   /* margin: 0 auto; */
+}
+.Category select,.date input{
+    border: none;
+    font-size: 1rem;
+    margin-left: -67%;
+    background-color: inherit;
+    /* width: 90%; */
+    outline: none;
+}
+.btn{
+    font-size: 1rem;
+    background-color: rgb(184, 157, 224);
+    border-radius: 5px;
+    margin:16px 0px;
+    cursor: pointer;
+}
+.table{
+    border: 2px solid green;
+    width: 100%;
+}
+.thead{
+    font-size: 1.5rem;
+    width: inherit;
+}
+.thead th{
+    width: 25%;
+}
+.tbody tr td{
+   background-color: rgb(58, 61, 60);
+   
+   
+}
+.tbody tr td p{
+    margin: 0%;
+    color: aliceblue;
+}
+.print{
+    background-color: rgb(168, 149, 183);
+}
