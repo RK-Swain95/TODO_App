@@ -11,7 +11,7 @@
 <body>
     <div class="header">
         
-        <h1 id="text_align"><i class="fa-solid fa-address-book fa-lg"></i>TODO Lists</h1>
+        <h1 id="text_align"><i class="fa-solid fa-clipboard-list"></i>TODO Lists</h1>
     </div>
     
     <div class="form">
@@ -28,7 +28,7 @@
                         <option>PERSONAL</option>
                         <option>WORK</option>
                         <option>SCHOOL</option>
-                        <option>CLEANING</option>
+                        <option>COURSE</option>
                         <option>OTHER</option>
 
                     </select>
@@ -39,6 +39,7 @@
                  </div>
             </div>
             <div class="submit">
+                <i class="fa-solid fa-square-plus fa-lg"></i>
                 <input type="submit"  class="btn"id="add" value="ADD TASK">
             </div>
         </form>
@@ -52,10 +53,10 @@
                 <table class="table">
                     <thead class="thead">
                         <tr>
-                          <th>Select</th>
+                          <th><i class="fa-solid fa-circle-check"></i></th>
                           <th>Task</th>
                           <th>Category</th>
-                        <th>due date</th>
+                        <th><i class="fa-solid fa-calendar-check"></i>Due date</th>
                         </tr>
                      </thead>
                  <tbody class="tbody">
@@ -72,8 +73,9 @@
                        
 </table>
 <div>
+    <i class="fa-solid fa-trash"></i>
     <input type="submit" class="btn" value="DELETE TASK">
-            </div>>
+            </div>
         </form>
 
     
